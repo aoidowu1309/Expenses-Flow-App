@@ -60,3 +60,178 @@ h1 {
 .logout:hover {
     text-decoration: underline;
 }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 4px solid red;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/spinner.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+th{
+	background-color:#cf1b1b;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 0 10px;
+ 
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0px 30px 40px -20px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  /* background-image: linear-gradient(to bottom right, #cdb30c, #62760c); */
+   border-radius:20px;
+}
+.green {
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+.red {
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+}
+.blue {
+  border-top: 3px solid blue;
+  border-bottom: 3px solid blue;
+}
+.orange {
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+}
+.yellow {
+  border-top: 3px solid yellow;
+  border-bottom: 3px solid yellow;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom right,  #dff6f0, #4d80e4);
+   border-radius:20px;
+}
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom right, #f0daa4,#b49c73);
+   border-radius:20px;
+}
+.card4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom right, #c7b198, #cf1b1b);
+   border-radius:20px;
+}
+.card5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom right, #5e6f64, #a4b494);
+   border-radius:20px;
+}
+#tableview th{
+    position:sticky;
+    top:0
+}
+#tableview tr:hover{
+    background-color: #ccc;
+    color:#000;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+}
+.blockUpload,
+.block2 {
+	background-color: #ccc;
+  /* color: #ffffff; */
+  border-radius: 10px;
+  appearance: none;
+    -webkit-appearance: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding: 12px;
+  min-width: 200px;
+  border: 0px;
+  text-align:center;
+}
+.blockUpload:hover,
+.block2:hover {
+  /* background: #c0392b; */
+  background: #fff;
+  color: #ccc;
+}
